@@ -13,7 +13,9 @@ app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 
 app.use(express.static(__dirname + "/public"));
-app.use("/bin",require('./routes/RutasExpress'))
+//app.use("/bin",require('./routes/RutasExpress'))
+app.use("/",require('./routes/RutasExpress'))
+
 
 
 app.use((req, res, next) => {
